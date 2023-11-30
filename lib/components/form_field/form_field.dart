@@ -2,8 +2,7 @@ import 'package:contatos_flutter/configs/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-Widget getFormField(
-  TextEditingController controller, {
+Widget getFormField(TextEditingController controller, {
   double? marginBottom,
   double? width,
   InputDecoration? decoration,
@@ -29,6 +28,8 @@ Widget getFormField(
   void Function(String)? onChanged,
   String? Function(String?)? validator,
   List<TextInputFormatter>? inputFormatters,
+  int? minLines,
+  int? maxLines,
 }) {
   return Container(
     padding: EdgeInsets.only(bottom: marginBottom ?? SizeConfig.spacingDefault),
@@ -66,6 +67,8 @@ Widget getFormField(
       validator: validator,
       inputFormatters: inputFormatters ?? [],
       autovalidateMode: AutovalidateMode.onUserInteraction,
+      minLines: minLines ?? 1,
+      maxLines: maxLines ?? 1,
     ),
   );
 }

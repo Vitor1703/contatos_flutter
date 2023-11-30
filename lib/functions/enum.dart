@@ -1,0 +1,1 @@
+enum EnumContatoPage {novo, editar, visualizar}
