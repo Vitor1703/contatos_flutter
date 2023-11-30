@@ -1,3 +1,5 @@
+import 'package:contatos_flutter/configs/color_config.dart';
+import 'package:contatos_flutter/pages/contatos/contatos_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const App());
@@ -10,10 +12,10 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Contatos',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: ColorConfig.primary),
         useMaterial3: true,
       ),
-      home: Container(),
+      home: const ContatosPage(),
     );
   }
 }
