@@ -10,7 +10,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Contatos',
+      title: 'Contato'
+          '',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: ColorConfig.primary),
         useMaterial3: true,
